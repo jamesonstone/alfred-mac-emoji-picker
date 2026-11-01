@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key><string>tc.stone.mac-emoji-picker</string>
+	<key>category</key><string>Tools</string>
+	<key>createdby</key><string>Jameson Stone</string>
+	<key>description</key><string>Open the macOS emoji picker (Ctrl+Cmd+Space)</string>
+	<key>name</key><string>Mac Emoji Picker</string>
+	<key>readme</key><string>Type e or emoji in Alfred to open the built-in macOS emoji and symbols picker in the app you were using. Alfred needs Accessibility permission (System Settings, Privacy and Security, Accessibility) to send the keystroke.</string>
+	<key>version</key><string>1.0</string>
+	<key>webaddress</key><string></string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>type</key><string>alfred.workflow.input.keyword</string>
+			<key>uid</key><string>A1B2C3D4-0001-4000-8000-000000000001</string>
+			<key>version</key><integer>1</integer>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key><integer>2</integer>
+				<key>keyword</key><string>e</string>
+				<key>subtext</key><string>Open the macOS emoji picker</string>
+				<key>text</key><string>Emoji Picker</string>
+				<key>withspace</key><false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>type</key><string>alfred.workflow.input.keyword</string>
+			<key>uid</key><string>A1B2C3D4-0002-4000-8000-000000000002</string>
+			<key>version</key><integer>1</integer>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key><integer>2</integer>
+				<key>keyword</key><string>emoji</string>
+				<key>subtext</key><string>Open the macOS emoji picker</string>
+				<key>text</key><string>Emoji Picker</string>
+				<key>withspace</key><false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>type</key><string>alfred.workflow.action.script</string>
+			<key>uid</key><string>A1B2C3D4-0003-4000-8000-000000000003</string>
+			<key>version</key><integer>2</integer>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key><false/>
+				<key>escaping</key><integer>0</integer>
+				<key>script</key><string>sleep 0.3
+osascript -e 'tell application "System Events" to key code 49 using {control down, command down}'</string>
+				<key>scriptargtype</key><integer>1</integer>
+				<key>scriptfile</key><string></string>
+				<key>type</key><integer>0</integer>
+			</dict>
+		</dict>
+	</array>
+	<key>connections</key>
+	<dict>
+		<key>A1B2C3D4-0001-4000-8000-000000000001</key>
+		<array><dict><key>destinationuid</key><string>A1B2C3D4-0003-4000-8000-000000000003</string><key>modifiers</key><integer>0</integer><key>modifiersubtext</key><string></string><key>vitoclose</key><false/></dict></array>
+		<key>A1B2C3D4-0002-4000-8000-000000000002</key>
+		<array><dict><key>destinationuid</key><string>A1B2C3D4-0003-4000-8000-000000000003</string><key>modifiers</key><integer>0</integer><key>modifiersubtext</key><string></string><key>vitoclose</key><false/></dict></array>
+	</dict>
+	<key>uidata</key>
+	<dict>
+		<key>A1B2C3D4-0001-4000-8000-000000000001</key><dict><key>xpos</key><real>50</real><key>ypos</key><real>50</real></dict>
+		<key>A1B2C3D4-0002-4000-8000-000000000002</key><dict><key>xpos</key><real>50</real><key>ypos</key><real>200</real></dict>
+		<key>A1B2C3D4-0003-4000-8000-000000000003</key><dict><key>xpos</key><real>300</real><key>ypos</key><real>125</real></dict>
+	</dict>
+</dict>
+</plist>
