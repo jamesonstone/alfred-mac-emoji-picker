@@ -1,4 +1,20 @@
-# alfred-mac-emoji-picker
+<p align="center"><img src="workflow/icon.png" width="128" alt="Mac Emoji Picker icon"></p>
+
+```
+███████╗███╗   ███╗ ██████╗      ██╗██╗
+██╔════╝████╗ ████║██╔═══██╗     ██║██║
+█████╗  ██╔████╔██║██║   ██║     ██║██║
+██╔══╝  ██║╚██╔╝██║██║   ██║██   ██║██║
+███████╗██║ ╚═╝ ██║╚██████╔╝╚█████╔╝██║
+╚══════╝╚═╝     ╚═╝ ╚═════╝  ╚════╝ ╚═╝
+██████╗ ██╗ ██████╗██╗  ██╗███████╗██████╗ 
+██╔══██╗██║██╔════╝██║ ██╔╝██╔════╝██╔══██╗
+██████╔╝██║██║     █████╔╝ █████╗  ██████╔╝
+██╔═══╝ ██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗
+██║     ██║╚██████╗██║  ██╗███████╗██║  ██║
+╚═╝     ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+            ⌃ ⌘ ␣  ·  for Alfred  ·  type e and go
+```
 
 Type `e` or `emoji` in [Alfred](https://www.alfredapp.com) to open the built-in macOS emoji picker (the same one as `Ctrl+Cmd+Space`) in the app you were just using.
 
